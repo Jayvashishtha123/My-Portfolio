@@ -1,17 +1,17 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(69, 66, 66, 0.582),
-    rgba(12, 8, 24, 0.904)
+    rgba(9, 228, 199, 0.582),
+    rgba(7, 8, 8, 0.904)
   );
 
   --image-gradient: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
+    rgba(195, 178, 52, 0.678),
+    rgba(12, 16, 13, 0.863)
   );
 
-  --imp-text-color: #5f3871;
+  --imp-text-color: #74758d;
 }
 
 .purple {
@@ -29,7 +29,7 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #0c0513;
+  background-color: #670fbf;
   background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -54,12 +54,12 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: #eeecf2;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: rgba(127, 244, 3, 0.959);
   border-radius: 12px;
 }
 
@@ -73,9 +73,9 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  background-color: #9693cea9 !important;
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+  box-shadow: 0px 10px 10px 0px rgba(43, 10, 207, 0.171) !important;
   backdrop-filter: blur(15px) !important;
 }
 
@@ -191,7 +191,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: hwb(282 37% 31%);
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -724,7 +724,7 @@ button:focus {
 
 .fork-btn-inner {
   line-height: 1.4em !important;
-  background-color: #934cce5e !important;
+  background-color: #1616165e !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;
@@ -732,8 +732,8 @@ button:focus {
 
 .fork-btn-inner:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: #ffffff86 !important;
+  border-color: #00000086 !important;
 }
 .fork-btn-inner::after {
   display: none !important;
