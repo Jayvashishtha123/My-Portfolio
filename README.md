@@ -1,6 +1,5 @@
-React Portfolio App
-This is a simple portfolio application built using React. It showcases various components such as a home page, about section, projects display, resume section, and a navigation bar for easy navigation across different sections.
-
+<h1 align="center">React Portfolio App</h1>
+<p align="center">This is a simple portfolio application built using React. It showcases various components such as a home page, about section, projects display, resume section, and a navigation bar for easy navigation across different sections.</p>
 Features
 Preloader: A loading spinner is displayed while the content of the application is being loaded.
 Navbar: A navigation bar is provided at the top of the application, allowing users to navigate between different sections.
@@ -42,4 +41,3 @@ This application serves as a basic template for creating a portfolio website usi
 
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
-
