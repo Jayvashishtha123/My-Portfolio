@@ -14,7 +14,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your_username/react-portfolio.git
+git clone https://github.com/Jayvashishtha123/react-portfolio.git
 Navigate to the project directory:
 
 bash
