@@ -1,0 +1,93 @@
+/* Learning.css */
+
+.learning-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center vertically */
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.learning-title {
+  font-size: 2.5em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.learning-intro {
+  font-size: 1.2em;
+  color: #e0e0e0;
+  margin-bottom: 40px;
+}
+
+.learning-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.learning-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  cursor: pointer;
+  transform-origin: center;
+}
+
+.learning-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.card-title {
+  font-size: 1.5em;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 1em;
+  color: #444;
+}
+
+@media (max-width: 768px) {
+  .learning-title {
+    font-size: 2em;
+  }
+
+  .learning-intro {
+    font-size: 1em;
+  }
+
+  .learning-card {
+    padding: 15px;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .learning-title {
+    font-size: 1.5em;
+  }
+
+  .learning-intro {
+    font-size: 0.9em;
+  }
+
+  .learning-card {
+    padding: 10px;
+    max-width: 150px;
+  }
+}

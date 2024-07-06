@@ -59,7 +59,7 @@ button:focus {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(127, 244, 3, 0.959);
+  background: rgba(63, 64, 61, 0.959);
   border-radius: 12px;
 }
 
@@ -73,9 +73,9 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #9693cea9 !important;
+  background-color: #1d13dfa9 !important;
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(43, 10, 207, 0.171) !important;
+  box-shadow: 0px 10px 10px 0px rgba(39, 16, 139, 0.171) !important;
   backdrop-filter: blur(15px) !important;
 }
 
@@ -94,7 +94,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #adb5cc !important;
+  background-color: #5f7aca !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -738,3 +738,6 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+
+

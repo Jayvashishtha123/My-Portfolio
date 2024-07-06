@@ -6,6 +6,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
+import Learning  from "./components/Learning/Learning";
 import {
   BrowserRouter as Router,
   Route,
@@ -16,6 +17,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import learning from "./components/Learning/Learning";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -39,6 +41,7 @@ function App() {
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
+          < Route path="/learning" element={<Learning/>}/>
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
