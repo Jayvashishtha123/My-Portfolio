@@ -1,0 +1,213 @@
+/* Assuming there is a fixed header with a class name 'header' */
+
+/* Page Container */
+.dsa-page-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px; /* Adjust this value to match your header height */
+  }
+  
+  /* Page Title */
+  .dsa-page-title {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    animation: slideInTitle 1s ease-out, fadeIn 1.5s ease-out;
+  }
+  
+  /* Lessons Container */
+  .lessons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Lesson Card */
+  .lesson-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    animation: fadeIn 1s ease-out;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .lesson-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #fff; /* Change background on hover */
+  }
+  
+  /* Lesson Title */
+  .lesson-title {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 10px;
+    transition: color 0.3s; /* Smooth transition for title color change */
+  }
+  
+  /* Lesson Content */
+  .lesson-content {
+    font-size: 1em;
+    color: #444;
+    margin-bottom: 15px;
+  }
+  
+  /* Buttons Row */
+  .buttons-row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+  
+  /* Notes and Problems Buttons */
+  .notes-button,
+  .problems-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notes-button:hover,
+  .problems-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    animation: pulse 0.5s ease-in-out; /* Add pulse animation on hover */
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Keyframes for Animations */
+  @keyframes slideInTitle {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Additional Decorative Effects */
+  .lesson-card:hover .lesson-title {
+    color: #0056b3; /* Change title color on hover */
+  }
+  
+  /* Additional Animations and Effects */
+  .lesson-card {
+    transform-style: preserve-3d; /* 3D transformation */
+  }
+  
+  .lesson-card:hover {
+    transform: translateY(-5px) rotateY(5deg); /* Rotate and lift on hover */
+  }
+  
+  .lesson-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3); /* Overlay on hover */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .lesson-card:hover::after {
+    opacity: 1;
+  }
+  
+  /* Box Shadow on Hover */
+  .lesson-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .lesson-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Hover Scale */
+  .lesson-card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+  }
+  
+  /* Text Shadow */
+  .lesson-title {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Text shadow for title */
+  }
+  
+  /* Fade In Animation */
+  .lesson-card {
+    opacity: 0;
+    animation: fadeInCard 1s forwards;
+  }
+  
+  @keyframes fadeInCard {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Perspective and Rotation on Hover */
+  .lesson-card {
+    perspective: 1000px;
+  }
+  
+  .lesson-card:hover {
+    transform: rotateY(10deg); /* Rotate on Y axis */
+  }
+  
+  /* Remove Gradient and Add Alternative Animation */
+  .lesson-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .lesson-card:hover::before {
+    opacity: 0.5; /* Adjust opacity as needed */
+    background-color: rgba(0, 0, 0, 0.1); /* Change background color or add other effects */
+  }
+  
+  

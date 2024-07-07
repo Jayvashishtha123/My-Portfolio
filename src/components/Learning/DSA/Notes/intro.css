@@ -1,0 +1,31 @@
+.dsa-introduction-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .dsa-section {
+    margin-bottom: 30px;
+  }
+  
+  .dsa-section-title {
+    font-size: 1.8em;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .dsa-section-content {
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Optional: Add additional styling for bullet points or numbered lists */
+  .dsa-section-content ul {
+    margin-left: 20px;
+  }
+  
+  .dsa-section-content li {
+    margin-bottom: 5px;
+  }
+  
